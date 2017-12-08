@@ -13,6 +13,7 @@ class Song {
     val location = "lawn"
     val snow = Snow()
     val moon = Moon()
+
     fun main(args: ArrayList<String>) {
         twas {
             night.isBefore(christmas)
@@ -22,7 +23,7 @@ class Song {
 
             children.all { it.inBed && it.hallucinating }
             parents.forEach {
-                it.dressed = true
+                it.dressed = true // todo talk to analysts on why we're following 1800 standards
                 it.inBed = true
             }
 
