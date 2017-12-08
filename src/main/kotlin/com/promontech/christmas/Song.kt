@@ -23,7 +23,7 @@ class Song {
 
             children.all { it.inBed && it.hallucinating }
             parents.forEach {
-                it.dressed = true // todo talk to analysts on why we're following 1800 standards
+                it.dressed = true // todo talk to analysts on why we're following 1800s standards
                 it.inBed = true
             }
 
@@ -49,10 +49,13 @@ class Song {
                 // TODO implement moonlight on landscape
             }
 
-            when (parents[1].eyes) {
+            when (parents.find { it.name == "I" }?.eyes) {
                 "wondering" -> "miniature sleigh and 8 tiny reindeer"
             }
 
+            with("little old driver") {
+                parents.find { it.name == "I" }?.brain?.contains("St. Nick")
+            }
         }
     }
 
@@ -73,6 +76,13 @@ fun openShutters() {}
 
 data class Mouse(val stirring: Boolean = false)
 class Stocking(val hung: Boolean = true)
-class Person(val name: String = "", var inBed: Boolean = true, var hallucinating: Boolean = true, var dressed: Boolean = false, val eyes: String = "wondering eyes")
+class Person(
+        val name: String = "",
+        var inBed: Boolean = true,
+        var hallucinating: Boolean = true,
+        var dressed: Boolean = false,
+        val eyes: String = "wondering eyes",
+        val brain: String = "")
+
 class Snow(val isNew: Boolean = true, val hasBreast: Boolean = true)
 class Moon
