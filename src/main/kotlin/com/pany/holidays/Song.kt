@@ -1,4 +1,4 @@
-package com.promontech.christmas
+package com.pany.holidays
 
 import java.time.LocalDateTime
 

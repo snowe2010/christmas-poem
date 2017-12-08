@@ -19,8 +19,8 @@ apply plugin: 'kotlin-spring'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 
-group = 'com.promontech'
-version = '0.0.1-SNAPSHOT'
+group = 'com.pany'
+version = '0.0.1-STNICK'
 sourceCompatibility = 1.8
 compileKotlin {
 	kotlinOptions.jvmTarget = "1.8"
@@ -33,7 +33,7 @@ repositories {
 	mavenCentral()
 }
 
-mainClassName = 'com.promontech.christmas.SongKt'
+mainClassName = 'com.pany.holidays.SongKt'
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter')

@@ -1,9 +1,6 @@
-package com.promontech.christmas
+package com.pany.holidays
 
-import com.promontech.christmas.DreidelMaterial.CLAY
-import com.promontech.christmas.DreidelMaterial.WOOD
-import com.promontech.christmas.DreidelMaterial.GLASS
-import com.promontech.christmas.DreidelMaterial.GOLD
+import com.pany.holidays.DreidelMaterial.*
 
 fun say(v: String) {}
 fun make(v: String): Dreidel = Dreidel()
