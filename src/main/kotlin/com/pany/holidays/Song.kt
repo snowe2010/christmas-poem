@@ -14,7 +14,7 @@ class Song {
     val snow = Snow()
     val moon = Moon()
 
-    fun main(args: ArrayList<String>) {
+    fun main(args: Array<String>) {
         twas {
             night.isBefore(christmas)
             !mouse.stirring
